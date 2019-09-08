@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{714AB439-75A4-4D49-BCF2-4233FE95E1E7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HDLApiEntity</RootNamespace>
+    <AssemblyName>HDLApiEntity</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiShowEntity\UI_DeviceInfo.cs" />
+    <Compile Include="ApiShowEntity\UI_ModuleInfo.cs" />
+    <Compile Include="CommonEntity\BasicImageInfo.cs" />
+    <Compile Include="CommonEntity\Basic_Software_Info.cs" />
+    <Compile Include="CommonEntity\EnumImageType.cs" />
+    <Compile Include="CommonEntity\EnumPowerMeterGather.cs" />
+    <Compile Include="CommonEntity\EnumSceneType.cs" />
+    <Compile Include="CommonEntity\EnumTagType.cs" />
+    <Compile Include="CommonEntity\EnumTargetActionType.cs" />
+    <Compile Include="CommonEntity\EnumUserEnable.cs" />
+    <Compile Include="CommonEntity\EnumUserPower.cs" />
+    <Compile Include="CommonEntity\EnumUserRole.cs" />
+    <Compile Include="CommonEntity\EnumUserState.cs" />
+    <Compile Include="CommonEntity\GroupControlInfo.cs" />
+    <Compile Include="CommonEntity\GroupControlTargetInfo.cs" />
+    <Compile Include="CommonEntity\PowerMeterAlarmSetting.cs" />
+    <Compile Include="CommonEntity\PowerMeterHours.cs" />
+    <Compile Include="CommonEntity\PowerMeterInfo.cs" />
+    <Compile Include="CommonEntity\SceneInfo.cs" />
+    <Compile Include="CommonEntity\SceneTargetInfo.cs" />
+    <Compile Include="CommonEntity\TagInfo.cs" />
+    <Compile Include="CommonEntity\UserInfo.cs" />
+    <Compile Include="CommonEntity\ZoneInfo.cs" />
+    <Compile Include="DevicesEntity\BaseDeviceInfo.cs" />
+    <Compile Include="DevicesEntity\Basic_Bus_DeviceInfo.cs" />
+    <Compile Include="DevicesEntity\Basic_Knx_DeviceInfo.cs" />
+    <Compile Include="DevicesEntity\EnumDeviceBelonging.cs" />
+    <Compile Include="DevicesEntity\EnumDeviceConnectWay.cs" />
+    <Compile Include="DevicesEntity\EnumDeviceRemoteCtrl.cs" />
+    <Compile Include="DevicesEntity\EnumDeviceStatusMark.cs" />
+    <Compile Include="DevicesEntity\ModuleInfo.cs" />
+    <Compile Include="DevicesEntity\PowerBoxInfo.cs" />
+    <Compile Include="DevicesEntity\Basic_UI_DeviceInfo.cs" />
+    <Compile Include="DeviceStatusDataEntity\BaseDataInfo.cs" />
+    <Compile Include="DeviceStatusDataEntity\DatasAir.cs" />
+    <Compile Include="DeviceStatusDataEntity\DatasCurtain.cs" />
+    <Compile Include="DeviceStatusDataEntity\DatasLamp.cs" />
+    <Compile Include="EnumEntity\ActionEnumAir.cs" />
+    <Compile Include="EnumEntity\ActionEnumCurtain.cs" />
+    <Compile Include="EnumEntity\ActionEnumLamp.cs" />
+    <Compile Include="EnumEntity\AirModeEnum.cs" />
+    <Compile Include="EnumEntity\AirSpeedEnum.cs" />
+    <Compile Include="EnumEntity\CurtainStatusEnum.cs" />
+    <Compile Include="EnumEntity\DeviceChildType.cs" />
+    <Compile Include="EnumEntity\EnumProtocolStyle.cs" />
+    <Compile Include="EnumEntity\DeviceTypeEnum.cs" />
+    <Compile Include="EnumEntity\EnumCommonAlarmType.cs" />
+    <Compile Include="EnumEntity\EnumCommonControl.cs" />
+    <Compile Include="EnumEntity\EnumCommonEnable.cs" />
+    <Compile Include="EnumEntity\EnumCommonLocation.cs" />
+    <Compile Include="EnumEntity\EnumCommonLoginOutState.cs" />
+    <Compile Include="EnumEntity\EnumCommonOnOff.cs" />
+    <Compile Include="EnumEntity\EnumCommonVisable.cs" />
+    <Compile Include="EnumEntity\LampStatusEnum.cs" />
+    <Compile Include="EnumEntity\RedisKeyType.cs" />
+    <Compile Include="EnumEntity\RedisThemeType.cs" />
+    <Compile Include="EnumEntity\TemperatureTypeEnum.cs" />
+    <Compile Include="HistoryEntity\BasicHistoryInfo.cs" />
+    <Compile Include="HistoryEntity\Record_Auto_Events.cs" />
+    <Compile Include="HistoryEntity\Record_Device_Alarm.cs" />
+    <Compile Include="HistoryEntity\Record_Device_Status_Change.cs" />
+    <Compile Include="HistoryEntity\Record_Login_Out.cs" />
+    <Compile Include="HistoryEntity\Record_Message_Send.cs" />
+    <Compile Include="HistoryEntity\Record_User_Operation.cs" />
+    <Compile Include="MessageEntity\ResponeEnumCode.cs" />
+    <Compile Include="MessageEntity\ResponeMessage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RelationEntity\Relate_Device_View.cs" />
+    <Compile Include="RelationEntity\Relate_Module_Device.cs" />
+    <Compile Include="RelationEntity\Relate_PowerBox_Module.cs" />
+    <Compile Include="RelationEntity\Relate_User_View.cs" />
+    <Compile Include="RelationEntity\Relate_User_Zone.cs" />
+    <Compile Include="RelationEntity\Relate_Zone_BgImg.cs" />
+    <Compile Include="RelationEntity\Relate_Zone_Device.cs" />
+    <Compile Include="RelationEntity\Relate_Zone_PowerMeter.cs" />
+    <Compile Include="RelationEntity\Relate_Zone_View.cs" />
+    <Compile Include="ViewEntity\BasicViewInfo.cs" />
+    <Compile Include="ViewEntity\EnumIconType.cs" />
+    <Compile Include="ViewEntity\EnumViewBind.cs" />
+    <Compile Include="ViewEntity\EnumViewState.cs" />
+    <Compile Include="ViewEntity\EnumViewTempType.cs" />
+    <Compile Include="ViewEntity\EnumViewType.cs" />
+    <Compile Include="ViewEntity\FavoriteViewInfo.cs" />
+    <Compile Include="ViewEntity\ViewSceneInfo.cs" />
+    <Compile Include="ViewEntity\ViewIconInfo.cs" />
+    <Compile Include="ViewEntity\ViewTempInfo.cs" />
+    <Compile Include="WebsocketEntity\BUS_Remote_Control_Object.cs" />
+    <Compile Include="WebsocketEntity\KNX_Remote_Control_Object.cs" />
+    <Compile Include="XmlEntity\ModuleTypeInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

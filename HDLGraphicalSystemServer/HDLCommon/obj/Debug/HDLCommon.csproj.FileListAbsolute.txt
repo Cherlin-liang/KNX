@@ -1,0 +1,9 @@
+E:\HDL新图形监控系统\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLCommon\obj\Debug\HDLCommon.csprojAssemblyReference.cache
+E:\HDL新图形监控系统\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLCommon\obj\Debug\HDLCommon.csproj.CoreCompileInputs.cache
+E:\HDL新图形监控系统\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLCommon\bin\Debug\HDLCommon.dll
+E:\HDL新图形监控系统\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLCommon\bin\Debug\HDLCommon.pdb
+E:\HDL新图形监控系统\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLCommon\bin\Debug\HDLApiEntity.dll
+E:\HDL新图形监控系统\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLCommon\bin\Debug\HDLApiEntity.pdb
+E:\HDL新图形监控系统\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLCommon\obj\Debug\HDLCommon.csproj.CopyComplete
+E:\HDL新图形监控系统\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLCommon\obj\Debug\HDLCommon.dll
+E:\HDL新图形监控系统\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLCommon\obj\Debug\HDLCommon.pdb

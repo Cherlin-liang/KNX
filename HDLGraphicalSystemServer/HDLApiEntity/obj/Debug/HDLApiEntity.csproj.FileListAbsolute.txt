@@ -1,0 +1,6 @@
+E:\HDL新图形监控系统\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLApiEntity\bin\Debug\HDLApiEntity.dll
+E:\HDL新图形监控系统\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLApiEntity\bin\Debug\HDLApiEntity.pdb
+E:\HDL新图形监控系统\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLApiEntity\obj\Debug\HDLApiEntity.csproj.CoreCompileInputs.cache
+E:\HDL新图形监控系统\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLApiEntity\obj\Debug\HDLApiEntity.dll
+E:\HDL新图形监控系统\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLApiEntity\obj\Debug\HDLApiEntity.pdb
+E:\HDL新图形监控系统\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLGraphicalSystemServer\HDLApiEntity\obj\Debug\HDLApiEntity.csprojAssemblyReference.cache

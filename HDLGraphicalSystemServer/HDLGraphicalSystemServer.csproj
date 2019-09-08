@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67B4ABBA-C251-4840-AC33-F51A9EB2EE38}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HDLGraphicalSystemServer</RootNamespace>
+    <AssemblyName>HDLGraphicalSystemServer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.JScript" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="RedLock.StrongName, Version=1.7.4.0, Culture=neutral, PublicKeyToken=1dffde0a6c007f07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\HDL\Work\documents\KNX驱动\Debug\RedLock.StrongName.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis, Version=1.2.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\HDL\Work\documents\KNX驱动\Debug\StackExchange.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Vse.Web.Serialization, Version=1.0.4.0, Culture=neutral, PublicKeyToken=fb838febb49f46b2, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vse.Web.Serialization.ControlledSerializationJsonConverter.1.0.4\lib\net45\Vse.Web.Serialization.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HDLApiEntity\ApiShowEntity\UI_DeviceInfo.cs" />
+    <Compile Include="HDLApiEntity\ApiShowEntity\UI_ModuleInfo.cs" />
+    <Compile Include="HDLApiEntity\CommonEntity\BasicImageInfo.cs" />
+    <Compile Include="HDLApiEntity\CommonEntity\Basic_Software_Info.cs" />
+    <Compile Include="HDLApiEntity\CommonEntity\EnumImageType.cs" />
+    <Compile Include="HDLApiEntity\CommonEntity\EnumPowerMeterGather.cs" />
+    <Compile Include="HDLApiEntity\CommonEntity\EnumSceneType.cs" />
+    <Compile Include="HDLApiEntity\CommonEntity\EnumTagType.cs" />
+    <Compile Include="HDLApiEntity\CommonEntity\EnumTargetActionType.cs" />
+    <Compile Include="HDLApiEntity\CommonEntity\EnumUserEnable.cs" />
+    <Compile Include="HDLApiEntity\CommonEntity\EnumUserPower.cs" />
+    <Compile Include="HDLApiEntity\CommonEntity\EnumUserRole.cs" />
+    <Compile Include="HDLApiEntity\CommonEntity\EnumUserState.cs" />
+    <Compile Include="HDLApiEntity\CommonEntity\GroupControlInfo.cs" />
+    <Compile Include="HDLApiEntity\CommonEntity\GroupControlTargetInfo.cs" />
+    <Compile Include="HDLApiEntity\CommonEntity\PowerMeterAlarmSetting.cs" />
+    <Compile Include="HDLApiEntity\CommonEntity\PowerMeterHours.cs" />
+    <Compile Include="HDLApiEntity\CommonEntity\PowerMeterInfo.cs" />
+    <Compile Include="HDLApiEntity\CommonEntity\SceneInfo.cs" />
+    <Compile Include="HDLApiEntity\CommonEntity\SceneTargetInfo.cs" />
+    <Compile Include="HDLApiEntity\CommonEntity\TagInfo.cs" />
+    <Compile Include="HDLApiEntity\CommonEntity\UserInfo.cs" />
+    <Compile Include="HDLApiEntity\CommonEntity\ZoneInfo.cs" />
+    <Compile Include="HDLApiEntity\DevicesEntity\BaseDeviceInfo.cs" />
+    <Compile Include="HDLApiEntity\DevicesEntity\Basic_Bus_DeviceInfo.cs" />
+    <Compile Include="HDLApiEntity\DevicesEntity\Basic_Knx_DeviceInfo.cs" />
+    <Compile Include="HDLApiEntity\DevicesEntity\Basic_UI_DeviceInfo.cs" />
+    <Compile Include="HDLApiEntity\DevicesEntity\EnumDeviceBelonging.cs" />
+    <Compile Include="HDLApiEntity\DevicesEntity\EnumDeviceConnectWay.cs" />
+    <Compile Include="HDLApiEntity\DevicesEntity\EnumDeviceRemoteCtrl.cs" />
+    <Compile Include="HDLApiEntity\DevicesEntity\EnumDeviceStatusMark.cs" />
+    <Compile Include="HDLApiEntity\DevicesEntity\ModuleInfo.cs" />
+    <Compile Include="HDLApiEntity\DevicesEntity\PowerBoxInfo.cs" />
+    <Compile Include="HDLApiEntity\DeviceStatusDataEntity\BaseDataInfo.cs" />
+    <Compile Include="HDLApiEntity\DeviceStatusDataEntity\DatasAir.cs" />
+    <Compile Include="HDLApiEntity\DeviceStatusDataEntity\DatasCurtain.cs" />
+    <Compile Include="HDLApiEntity\DeviceStatusDataEntity\DatasLamp.cs" />
+    <Compile Include="HDLApiEntity\EnumEntity\ActionEnumAir.cs" />
+    <Compile Include="HDLApiEntity\EnumEntity\ActionEnumCurtain.cs" />
+    <Compile Include="HDLApiEntity\EnumEntity\ActionEnumLamp.cs" />
+    <Compile Include="HDLApiEntity\EnumEntity\AirModeEnum.cs" />
+    <Compile Include="HDLApiEntity\EnumEntity\AirSpeedEnum.cs" />
+    <Compile Include="HDLApiEntity\EnumEntity\CurtainStatusEnum.cs" />
+    <Compile Include="HDLApiEntity\EnumEntity\DeviceChildType.cs" />
+    <Compile Include="HDLApiEntity\EnumEntity\DeviceTypeEnum.cs" />
+    <Compile Include="HDLApiEntity\EnumEntity\EnumCommonAlarmType.cs" />
+    <Compile Include="HDLApiEntity\EnumEntity\EnumCommonControl.cs" />
+    <Compile Include="HDLApiEntity\EnumEntity\EnumCommonEnable.cs" />
+    <Compile Include="HDLApiEntity\EnumEntity\EnumCommonLocation.cs" />
+    <Compile Include="HDLApiEntity\EnumEntity\EnumCommonLoginOutState.cs" />
+    <Compile Include="HDLApiEntity\EnumEntity\EnumCommonOnOff.cs" />
+    <Compile Include="HDLApiEntity\EnumEntity\EnumCommonVisable.cs" />
+    <Compile Include="HDLApiEntity\EnumEntity\EnumProtocolStyle.cs" />
+    <Compile Include="HDLApiEntity\EnumEntity\LampStatusEnum.cs" />
+    <Compile Include="HDLApiEntity\EnumEntity\RedisKeyType.cs" />
+    <Compile Include="HDLApiEntity\EnumEntity\RedisThemeType.cs" />
+    <Compile Include="HDLApiEntity\EnumEntity\TemperatureTypeEnum.cs" />
+    <Compile Include="HDLApiEntity\HistoryEntity\BasicHistoryInfo.cs" />
+    <Compile Include="HDLApiEntity\HistoryEntity\Record_Auto_Events.cs" />
+    <Compile Include="HDLApiEntity\HistoryEntity\Record_Device_Alarm.cs" />
+    <Compile Include="HDLApiEntity\HistoryEntity\Record_Device_Status_Change.cs" />
+    <Compile Include="HDLApiEntity\HistoryEntity\Record_Login_Out.cs" />
+    <Compile Include="HDLApiEntity\HistoryEntity\Record_Message_Send.cs" />
+    <Compile Include="HDLApiEntity\HistoryEntity\Record_User_Operation.cs" />
+    <Compile Include="HDLApiEntity\MessageEntity\ResponeEnumCode.cs" />
+    <Compile Include="HDLApiEntity\MessageEntity\ResponeMessage.cs" />
+    <Compile Include="HDLApiEntity\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="HDLApiEntity\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="HDLApiEntity\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="HDLApiEntity\RelationEntity\Relate_Device_View.cs" />
+    <Compile Include="HDLApiEntity\RelationEntity\Relate_Module_Device.cs" />
+    <Compile Include="HDLApiEntity\RelationEntity\Relate_PowerBox_Module.cs" />
+    <Compile Include="HDLApiEntity\RelationEntity\Relate_User_View.cs" />
+    <Compile Include="HDLApiEntity\RelationEntity\Relate_User_Zone.cs" />
+    <Compile Include="HDLApiEntity\RelationEntity\Relate_Zone_BgImg.cs" />
+    <Compile Include="HDLApiEntity\RelationEntity\Relate_Zone_Device.cs" />
+    <Compile Include="HDLApiEntity\RelationEntity\Relate_Zone_PowerMeter.cs" />
+    <Compile Include="HDLApiEntity\RelationEntity\Relate_Zone_View.cs" />
+    <Compile Include="HDLApiEntity\ViewEntity\BasicViewInfo.cs" />
+    <Compile Include="HDLApiEntity\ViewEntity\EnumIconType.cs" />
+    <Compile Include="HDLApiEntity\ViewEntity\EnumViewBind.cs" />
+    <Compile Include="HDLApiEntity\ViewEntity\EnumViewState.cs" />
+    <Compile Include="HDLApiEntity\ViewEntity\EnumViewTempType.cs" />
+    <Compile Include="HDLApiEntity\ViewEntity\EnumViewType.cs" />
+    <Compile Include="HDLApiEntity\ViewEntity\FavoriteViewInfo.cs" />
+    <Compile Include="HDLApiEntity\ViewEntity\ViewIconInfo.cs" />
+    <Compile Include="HDLApiEntity\ViewEntity\ViewSceneInfo.cs" />
+    <Compile Include="HDLApiEntity\ViewEntity\ViewTempInfo.cs" />
+    <Compile Include="HDLApiEntity\WebsocketEntity\BUS_Remote_Control_Object.cs" />
+    <Compile Include="HDLApiEntity\WebsocketEntity\KNX_Remote_Control_Object.cs" />
+    <Compile Include="HDLApiEntity\XmlEntity\ModuleTypeInfo.cs" />
+    <Compile Include="HDLCommon\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="HDLCommon\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="HDLCommon\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="HDLCommon\RedisController.cs" />
+    <Compile Include="HDLCommon\RedisHelper\Caching\CacheExtensions.cs" />
+    <Compile Include="HDLCommon\RedisHelper\Caching\CacheKeyType.cs" />
+    <Compile Include="HDLCommon\RedisHelper\Caching\ICacheManager.cs" />
+    <Compile Include="HDLCommon\RedisHelper\Caching\MemoryCacheManager.cs" />
+    <Compile Include="HDLCommon\RedisHelper\Caching\RedisCacheManager.cs" />
+    <Compile Include="HDLCommon\RedisHelper\MemoryDb\IRedisConnectionWrapper.cs" />
+    <Compile Include="HDLCommon\RedisHelper\MemoryDb\RedisConnectionWrapper.cs" />
+    <Compile Include="HDLCommon\RedisHelper\RedisConnectionHelp.cs" />
+    <Compile Include="HDLCommon\RedisHelper\RedisStackExchangeHelper.cs" />
+    <Compile Include="HDLCommon\RedisKeyTool.cs" />
+    <Compile Include="HDLCommon\XmlHelper.cs" />
+    <Compile Include="MyKNX\Dimmer.cs" />
+    <Compile Include="MyKNX\frmMyKNX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyKNX\frmMyKNX.Designer.cs">
+      <DependentUpon>frmMyKNX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyKNX\myknx.cs" />
+    <Compile Include="MyKNX\UDP\GlobalClass.cs" />
+    <Compile Include="MyKNX\UDP\Receive.cs" />
+    <Compile Include="MyKNX\UDP\RowSocket.cs" />
+    <Compile Include="MyKNX\UDP\UDPReceive.cs" />
+    <Compile Include="MyKNX\UDP\UDPSend.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MyKNX\frmMyKNX.resx">
+      <DependentUpon>frmMyKNX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.manifest" />
+    <None Include="HDLApiEntity\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="HDLApiEntity\obj\Debug\HDLApiEntity.csproj.CoreCompileInputs.cache" />
+    <None Include="HDLApiEntity\obj\Debug\HDLApiEntity.csprojAssemblyReference.cache" />
+    <None Include="HDLApiEntity\obj\Release\HDLApiEntity.csproj.CoreCompileInputs.cache" />
+    <None Include="HDLApiEntity\obj\Release\HDLApiEntity.csprojAssemblyReference.cache" />
+    <None Include="HDLCommon\bin\Debug\Debug.zip" />
+    <None Include="HDLCommon\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="HDLCommon\obj\Debug\HDLCommon.csproj.CopyComplete" />
+    <None Include="HDLCommon\obj\Debug\HDLCommon.csproj.CoreCompileInputs.cache" />
+    <None Include="HDLCommon\obj\Debug\HDLCommon.csprojAssemblyReference.cache" />
+    <None Include="HDLCommon\obj\Release\HDLCommon.csproj.CoreCompileInputs.cache" />
+    <None Include="HDLCommon\obj\Release\HDLCommon.csprojAssemblyReference.cache" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HDLApiEntity\bin\Debug\HDLApiEntity.dll" />
+    <Content Include="HDLApiEntity\bin\Debug\HDLApiEntity.pdb" />
+    <Content Include="HDLApiEntity\HDLApiEntity.csproj" />
+    <Content Include="HDLApiEntity\obj\Debug\HDLApiEntity.csproj.FileListAbsolute.txt" />
+    <Content Include="HDLApiEntity\obj\Debug\HDLApiEntity.dll" />
+    <Content Include="HDLApiEntity\obj\Debug\HDLApiEntity.pdb" />
+    <Content Include="HDLCommon\bin\Debug\HDLApiEntity.dll" />
+    <Content Include="HDLCommon\bin\Debug\HDLApiEntity.pdb" />
+    <Content Include="HDLCommon\bin\Debug\HDLCommon.dll" />
+    <Content Include="HDLCommon\bin\Debug\HDLCommon.pdb" />
+    <Content Include="HDLCommon\bin\Debug\Newtonsoft.Json.dll" />
+    <Content Include="HDLCommon\bin\Debug\RedLock.StrongName.dll" />
+    <Content Include="HDLCommon\bin\Debug\StackExchange.Redis.dll" />
+    <Content Include="HDLCommon\HDLCommon.csproj" />
+    <Content Include="HDLCommon\obj\Debug\HDLCommon.csproj.FileListAbsolute.txt" />
+    <Content Include="HDLCommon\obj\Debug\HDLCommon.dll" />
+    <Content Include="HDLCommon\obj\Debug\HDLCommon.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HDLApiEntity\bin\Release\" />
+    <Folder Include="HDLApiEntity\obj\Debug\TempPE\" />
+    <Folder Include="HDLCommon\bin\Release\" />
+    <Folder Include="HDLCommon\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
